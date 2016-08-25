@@ -11,8 +11,10 @@
 // --------------
 
 $global-width: rem-calc(1280) !default;
-$global-text-direction: ltr !default;
+$grid-column-count: 12;
 $global-flexbox: false !default;
+
+$global-text-direction: ltr !default;
 $global-left: if($global-text-direction == rtl, right, left);
 $global-right: if($global-text-direction == rtl, left, right);
 
@@ -32,7 +34,6 @@ $breakpoint-classes: (small medium large);
 // -----------
 
 $grid-row-width: $global-width;
-$grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
   medium: 30px,
