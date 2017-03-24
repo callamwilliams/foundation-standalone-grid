@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.3
+ * Version 6.3.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -36,7 +36,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 20px,
+  large: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -46,7 +47,9 @@ $block-grid-max: 8;
 
 @import 'grid/grid';
 
-@mixin foundation($flex: false) {
+@import 'components/flex';
+
+@mixin foundation($flex: true) {
   @if $flex {
     $global-flexbox: true !global;
   }

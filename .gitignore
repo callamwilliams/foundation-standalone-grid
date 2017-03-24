@@ -25,6 +25,7 @@ fuel/app/cache/*/*
 *.tar
 *.zip
 *.psd
+*.idea
 /.idea/workspace.xml
 /.idea/tasks.xml
 /node_modules
